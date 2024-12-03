@@ -61,6 +61,9 @@ class House:
             return House(self.name, self.number_of_floors + value)
         elif isinstance(value, House):
             return House(self.name, self.number_of_floors + value.number_of_floors )
+            elif isinstance(value, int):
+
+            return self.number_of_floors + value.number_of_floors
         else:
             return NotImplemented
 
